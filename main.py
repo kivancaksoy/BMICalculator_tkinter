@@ -14,7 +14,6 @@ window.minsize(width=400, height=400)
 window.config(padx=20, pady=20)
 
 # result messages
-result = ""
 weight = 0.0
 height = 0.0
 
