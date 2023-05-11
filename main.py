@@ -1,19 +1,12 @@
 import tkinter
 
-# enter your weight kg
-
-# enter your height cm
-
-# Enter both weight and height!
-
-# Enter a valid number!
-
+# screen
 window = tkinter.Tk()
 window.title("BMI Calculator")
 window.minsize(width=400, height=400)
 window.config(padx=20, pady=20)
 
-# result messages
+# global variables
 weight = 0.0
 height = 0.0
 
@@ -40,7 +33,6 @@ msg = tkinter.Message(font=('Arial', 14, "normal"), width=200)
 
 # Button
 def show_result():
-    global result
     global msg
     bmi_result = bmi_calculate()
     if type(bmi_result) == tuple:
